@@ -1,14 +1,12 @@
-<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-<body>
-<table border="0" width="100%" height="100%">
-	<tr>
-		<td align="center" valign="middle"><span><a href="mailto:tiimi@minekerho.club">tiimi@minekerho.club</a></span></td>
-	</tr>
-</table>
-</body>
 <style>
+
 body {
-background: linear-gradient(324deg, #8fca5c, #477a1e, #61371f, #c28340);
+
+margin: 0;
+
+}
+#lataaja  {
+    background: linear-gradient(324deg, #8fca5c, #477a1e, #61371f, #c28340);
 background-size: 800% 800%;
 
 -webkit-animation: tausta 24s ease infinite;
@@ -47,3 +45,16 @@ a:hover {
 color:rgba(255,255,255,1);
 }
 </style>
+
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<iframe src="http://grannyfuck.me/" style="width: 100%; height: 100%;border:none;"></iframe>
+<div style="position: absolute; z-index: 3; top: 0; left: 0; width: 100%; height: 100%;" id="lataaja"><table border="0" width="100%" height="100%">
+        <tr>
+            <td align="center" valign="middle"><span>Ladataan...</span></td>
+        </tr>
+    </table></div>
+<script>
+setTimeout(function() {
+    document.getElementById('lataaja').style.display = 'none';
+}, 2000);
+</script>
